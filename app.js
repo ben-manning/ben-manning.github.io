@@ -11,27 +11,66 @@ function shuffle(a) {
 
 
 $(() => {
-  $('#randomizeX').on('click', () => {
-    let randomArray = shuffle(sampleArr);
+  // source:  https://stackoverflow.com/questions/57550082/creating-a-16x16-grid-using-javascript
+  // create an 11 x 11 grid of squares
+const container = $(".container");
 
-    for (let number of randomArray) {
-      // $('.container').append(number);
-      const $div = $('<div>').addClass('square');
-      $div.text(number);
-      $('.row').append($div);
-      console.log(number);
-    }
-  });
+function makeRows(rows, cols) {
+  console.log(rows)
+  console.log(cols)
+  container.style.setProperty('--grid-rows', rows);
+  container.style.setProperty('--grid-cols', cols);
+  for (c = 0; c < (rows * cols); c++) {
+    let cell = document.createElement("div");
+    cell.innerText = (c + 1);
+    container.appendChild(cell).className = "grid-item";
+  };
+};
 
-  $('#randomizeY').on('click', () => {
-    let randomArray = shuffle(sampleArr);
+makeRows(16, 16);
+  
+  
+  
+  
 
-    for (let number of randomArray) {
-      // $('.container').append(number);
-      const $div = $('<div>').addClass('square-y');
-      $div.text(number);
-      $('.container').append($div);
-      console.log(number);
-    }
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // $('#randomizeX').on('click', () => {
+  //   let randomArray = shuffle(sampleArr);
+
+  //   for (let number of randomArray) {
+  //     // $('.container').append(number);
+  //     const $div = $('<div>').addClass('square');
+  //     $div.text(number);
+  //     $('.row').append($div);
+  //     console.log(number);
+  //   }
+  // });
+
+  // $('#randomizeY').on('click', () => {
+  //   let randomArray = shuffle(sampleArr);
+
+  //   for (let number of randomArray) {
+  //     // $('.container').append(number);
+  //     const $div = $('<div>').addClass('square-y');
+  //     $div.text(number);
+  //     $('.container').append($div);
+  //     console.log(number);
+  //   }
+  // });
 });
+
+
+
