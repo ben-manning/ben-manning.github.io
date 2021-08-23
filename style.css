@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 body {
   background-color:#D9E7E2;
+  font-family: 'Comfortaa';
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.container {
+  text-align: center;
 }
