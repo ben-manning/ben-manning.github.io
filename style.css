@@ -5,12 +5,9 @@ body {
   font-family: 'Comfortaa';
 }
 
-.menu {
-  text-align: right;
-}
-
 .menu ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .container {
