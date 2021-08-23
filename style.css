@@ -24,6 +24,7 @@ footer {
 
 footer ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 footer ul li {
