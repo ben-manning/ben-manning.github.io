@@ -16,3 +16,21 @@ body {
 .container {
   text-align: center;
 }
+
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+.contact-icon {
+  height: 10%;
+  width: 10%;
+}
