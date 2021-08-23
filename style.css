@@ -31,6 +31,6 @@ footer ul li {
 }
 
 .contact-icon {
-  height: 10%;
-  width: 10%;
+  max-height: 50px;
+  max-width: 50px;
 }
