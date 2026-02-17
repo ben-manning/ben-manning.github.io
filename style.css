@@ -185,6 +185,62 @@ main {
   margin: 0;
 }
 
+.recordings-section {
+  padding: 2rem 0;
+}
+
+.recordings-section h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--text);
+  margin-top: 0;
+}
+
+.recordings-section p {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.recordings-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.recordings-table thead {
+  background: rgba(255,255,255,0.02);
+}
+
+.recordings-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.recordings-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: var(--text);
+}
+
+.recordings-table tbody tr:hover {
+  background: rgba(255,255,255,0.01);
+}
+
+.recordings-table a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.recordings-table a:hover {
+  text-decoration: underline;
+}
+
 .photo {
   width: 100%;
   max-width: 360px;
