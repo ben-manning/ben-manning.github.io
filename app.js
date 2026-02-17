@@ -1,5 +1,8 @@
 (() => {
   const init = () => {
+    const yearEl = document.getElementById('footer-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     const btn = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav-links');
     if (!btn || !nav) return;
