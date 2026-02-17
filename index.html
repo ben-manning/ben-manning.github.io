@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manning Dev | Welcome</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
-  <title>Manning Dev | Welcome</title>
 </head>
 <body>
-  <nav class="menu">
-    <ul>
-      <li><a href="ramblings/index.html">Ramblings</a></li>
-      <li><a href="https://www.manningdev.com/random-repo/">Ramblings</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h2>Welcome to Manning Dev</h2>
-    <p>My name is Ben Manning.</p>
-    <p>I like to practice web development.</p>
-    <p>I like to play music.</p>
-    <p>I love spending time with my partner and two dogs.</p>
-    <p>I am making an adjustment</p>
-    <img src="public/images/lucy_and_harvey.jpg" alt="My dogs, Lucy and Harvey" class="lucy-and-harvey">
-  </div>
-  <footer>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/manningben/" target="_blank"><img class="contact-icon" src="assets/images/linkedin.png" alt="LinkedIn icon"></a></li>
-      <li><a href="https://github.com/ben-manning" target="_blank"><img class="contact-icon" src="assets/images/github.png" alt="Github icon"></a></li>
-    </ul>
-    <div>
-      Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+  <header class="site-header">
+    <div class="container site-nav">
+      <a class="nav-brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="site-title">Manning Dev</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-navigation" class="nav-links" role="navigation" aria-label="Primary">
+        <a href="/" class="active">Home</a>
+        <a href="ramblings/index.html">Ramblings</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" role="region" aria-labelledby="home-heading">
+      <div>
+        <h1 id="home-heading">Hello — I’m Ben Manning</h1>
+        <p>Frontend developer, musician, and dog-owner. This is a simple responsive boilerplate with a navigation that condenses into a hamburger menu on small screens.</p>
+        <a class="cta" href="ramblings/index.html">Read my ramblings</a>
+      </div>
+      <div>
+        <img src="public/images/lucy_and_harvey.jpg" alt="Lucy and Harvey" style="width:100%;max-width:360px;border-radius:10px;margin-top:1rem;box-shadow:0 6px 18px rgba(2,6,23,.6);">
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>© <strong>Manning Dev</strong> — Built with HTML & CSS</div>
+      <div>
+        <a href="https://github.com/ben-manning" target="_blank" rel="noopener">GitHub</a>
+        <span style="margin:0 .5rem;color:rgba(255,255,255,.06)">·</span>
+        <a href="https://www.linkedin.com/in/manningben/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </footer>
 </body>
