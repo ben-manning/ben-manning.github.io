@@ -174,6 +174,14 @@ main {
   font-weight: 700;
 }
 
+.lucy-and-harvey {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 6px 18px rgba(2,6,23,.6);
+}
+
 footer.site-footer {
   border-top: 1px solid rgba(255,255,255,0.03);
   padding: 1.25rem 0;
