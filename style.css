@@ -314,6 +314,11 @@ footer.site-footer {
 @media (max-width: 780px) {
   .nav-toggle {
     display: block;
+    margin-left: auto;
+  }
+
+  .header-links {
+    display: none;
   }
 
   .nav-links {
@@ -345,6 +350,12 @@ footer.site-footer {
 
   .hero {
     padding: 1.25rem;
+  }
+
+  .site-footer .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
   }
 }
 
