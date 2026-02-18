@@ -72,10 +72,36 @@ header.site-header {
   object-fit: cover;
 }
 
+.header-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: auto;
+}
+
 .nav-links {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.nav-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-social a {
+  padding: .5rem .75rem;
+  border-radius: 6px;
+  color: var(--muted);
+  font-weight: 600;
+  transition: background .15s, color .15s;
+}
+
+.nav-social a:hover {
+  color: var(--text);
+  background: rgba(255,255,255,0.02);
 }
 
 .nav-links a {

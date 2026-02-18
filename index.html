@@ -30,19 +30,24 @@
         <span class="hamburger" aria-hidden="true"></span>
       </button>
 
-      <nav id="primary-navigation" class="nav-links" role="navigation" aria-label="Primary">
-        <a href="/" class="active">Home</a>
-        <a href="/recordings.html">Recordings</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-links">
+        <nav id="primary-navigation" class="nav-links" role="navigation" aria-label="Primary">
+          <a href="/" class="active">Home</a>
+          <a href="/recordings.html">Recordings</a>
+        </nav>
+
+        <div class="nav-social">
+          <a href="https://github.com/ben-manning" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/ben-manning-dev/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-      <div>
-        <h1 id="home-heading">Hello — I’m Ben Manning</h1>
-        <p>Frontend developer, educator, musician, and dog-owner. You can find my writing and projects here.</p>
-        <button id="subscribe-btn" class="subscribe-btn">Subscribe to Updates</button>
+  <main class="container">    <section class="hero" role="region" aria-labelledby="home-heading">      <div>
+        <h1 id="home-heading">Hi, I’m Ben!</h1>
+        <p>Educator, web-developer, musician, and dog-owner. You can find my writing ( coming soon! ) and projects ( coming soon! ) here.</p>
+        <button id="subscribe-btn" class="subscribe-btn">Let's Stay in Touch!</button>
       </div>
       <div>
         <img src="public/images/ben.jpg" alt="Ben Manning Photo" class="photo">
@@ -60,11 +65,6 @@
   <footer id="contact" class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="footer-year"></span> <strong>Manning Dev</strong></div>
-      <div>
-        <a href="https://github.com/ben-manning" target="_blank" rel="noopener">GitHub</a>
-        <span style="margin:0 .5rem;color:rgba(255,255,255,.06)">·</span>
-        <a href="https://www.linkedin.com/in/ben-manning-dev/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
     </div>
   </footer>
 
@@ -80,6 +80,5 @@
       </form>
     </div>
   </div>
-
 </body>
 </html>
