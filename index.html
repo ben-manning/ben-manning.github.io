@@ -12,6 +12,10 @@
   <link rel="icon" href="assets/images/favicon-48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="assets/images/favicon-192.png" sizes="192x192" type="image/png">
   <link rel="shortcut icon" href="assets/images/favicon-16.png" type="image/png">
+  <script 
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -35,10 +39,10 @@
   </header>
 
   <main class="container">
-    <section class="hero" role="region" aria-labelledby="home-heading">
       <div>
         <h1 id="home-heading">Hello — I’m Ben Manning</h1>
         <p>Frontend developer, educator, musician, and dog-owner. You can find my writing and projects here.</p>
+        <button id="subscribe-btn" class="subscribe-btn">Subscribe to Updates</button>
       </div>
       <div>
         <img src="public/images/ben.jpg" alt="Ben Manning Photo" class="photo">
@@ -63,5 +67,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Email Modal -->
+  <div id="email-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Subscribe to my newsletter</h2>
+      <form id="email-form">
+        <input type="text" id="name" placeholder="Your full name" required>
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe & Receive Resume</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
